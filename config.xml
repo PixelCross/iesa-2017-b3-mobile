@@ -20,6 +20,7 @@
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">
+        <splash src="www/res/screen/ios/yoyo.png" width="750" height="1334"/>
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
