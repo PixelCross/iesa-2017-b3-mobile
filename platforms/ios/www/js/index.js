@@ -28,6 +28,15 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        var element = document.getElementById('deviceProperties');
+        element.innerHTML = '<ul data-role="listview" id="list">'
+        + '<li data-icon="arrow-l">Name:  ' + device.name + ' </li>'
+        + '<li data-icon="arrow-r">Model:  ' + device.model + ' </li>'
+        + '<li data-icon="arrow-r">Cordova:  ' + device.cordova + ' </li>'
+        + '<li data-icon="arrow-l">Platform:  ' + device.platform + ' </li>'
+        + '<li data-icon="arrow-r">UUID:  ' + device.uuid + ' </li>'
+        + '<li data-icon="arrow-l">Version:  ' + device.version + ' </li>'
+        + '</ul>'
     },
 
     // Update DOM on a Received Event
