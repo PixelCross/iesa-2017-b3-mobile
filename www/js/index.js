@@ -39,6 +39,18 @@ var app = {
         + '</ul>'
     },
 
+
+    // date
+
+    var oldLaunch = window.localStorage.getItem("newLaunch");
+document.getElementById('olddate').innerHTML = "OLD DATE : " + oldLaunch;
+window.localStorage.clear();
+
+var newLaunch = new Date();
+window.localStorage.setItem("newLaunch", newLaunch);
+var newLaunchItem = window.localStorage.getItem("newLaunch");
+document.getElementById('date').innerHTML = "NEW DATE : " + newLaunchItem;
+
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
